@@ -1,0 +1,7 @@
+--cpu Cortex-M4.fp --scatter "d:\My\keilmake\stm\VSC和keil共用-寄存器\Target 1\out\AC5\Target 1.sct" --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers
+"d:\My\keilmake\stm\VSC和keil共用-寄存器\Target 1\out\AC5\TEST.o"
+"d:\My\keilmake\stm\VSC和keil共用-寄存器\Target 1\out\AC5\delay.o"
+"d:\My\keilmake\stm\VSC和keil共用-寄存器\Target 1\out\AC5\sys.o"
+"d:\My\keilmake\stm\VSC和keil共用-寄存器\Target 1\out\AC5\usart.o"
+"d:\My\keilmake\stm\VSC和keil共用-寄存器\Target 1\out\AC5\startup_stm32f40_41xxx.o" -o "d:\My\keilmake\stm\VSC和keil共用-寄存器\Target 1\out\AC5\Target 1.axf"
+--list "d:\My\keilmake\stm\VSC和keil共用-寄存器\Target 1\out\AC5\Target 1.map"

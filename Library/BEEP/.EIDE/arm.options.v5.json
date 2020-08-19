@@ -1,0 +1,12 @@
+{
+    "global": {},
+    "c/cpp-compiler": {
+        "optimization": "level-0",
+        "one-elf-section-per-function": true,
+        "warnings": "all-warnings"
+    },
+    "asm-compiler": {},
+    "linker": {},
+    "beforeBuildTasks": [],
+    "afterBuildTasks": []
+}

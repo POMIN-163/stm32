@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "name": "win32",
+            "includePath": [
+                "d:\\My\\keilmake\\stm\\Register\\one\\USER\\..\\SYSTEM\\delay",
+                "d:\\My\\keilmake\\stm\\Register\\one\\USER\\..\\SYSTEM\\sys",
+                "d:\\My\\keilmake\\stm\\Register\\one\\USER\\..\\SYSTEM\\usart",
+                ".\\dependence",
+                ".\\src\\USER",
+                ".\\src\\SYSTEM",
+                ".\\src\\START",
+                ".\\src\\SYSTEM\\usart",
+                ".\\src\\SYSTEM\\sys",
+                ".\\src\\SYSTEM\\delay",
+                ".\\src\\OBJ",
+                ".\\src\\MAIN",
+                "D:\\Maker\\keil\\ARM\\ARMCC\\include\\rw",
+                "D:\\Maker\\keil\\ARM\\ARMCC\\include",
+                ".\\dependence\\build-in\\toolchain"
+            ],
+            "defines": [
+                "stm32f40_41xxx",
+                "__CC_ARM",
+                "__forceinline=",
+                "__inline=",
+                "__asm(x)=",
+                "__declspec(x)=",
+                "__attribute__(x)=",
+                "__nonnull__(x)=",
+                "__int64=int",
+                "__irq=",
+                "__swi=",
+                "__weak=",
+                "__register=",
+                "__pure=",
+                "__value_in_regs=",
+                "__va_start(x)=",
+                "__va_arg(x)=",
+                "__va_end(x)="
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}
