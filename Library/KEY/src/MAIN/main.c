@@ -9,7 +9,7 @@ int main(void){
 	led_Init();
 	beep_Init();
 	key_Init();
-	while(1){NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+	while(1){
 		key_Value = key_Scan(0);
 		if(key_Value)// 为0直接跳过,提高效率
 		{
