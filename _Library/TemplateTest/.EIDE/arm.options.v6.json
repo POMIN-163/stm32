@@ -3,15 +3,13 @@
     "c/cpp-compiler": {
         "optimization": "level-0",
         "one-elf-section-per-function": true,
-        "warnings": "all-warnings"
+        "short-enums#wchar": true,
+        "warnings": "all-warnings",
+        "language-c": "c99",
+        "language-cpp": "c++11"
     },
     "asm-compiler": {},
     "linker": {},
     "beforeBuildTasks": [],
-    "afterBuildTasks": [
-        {
-            "name": "Clear",
-            "command": "${OutDir}\\..\\Clear.bat"
-        }
-    ]
+    "afterBuildTasks": []
 }

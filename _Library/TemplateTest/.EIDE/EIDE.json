@@ -1,5 +1,5 @@
 {
-    "name": "_My_Template",
+    "name": "TemplateTest",
     "type": "ARM",
     "mode": "Release",
     "toolchain": "AC5",
@@ -175,7 +175,7 @@
     "excludeList": [],
     "outDir": ".\\out",
     "uploadConfig": {
-        "bin": ".\\out\\AC5\\_My_Template.hex",
+        "bin": ".\\out\\AC5\\TemplateTest.hex",
         "useGuiDownloader": false,
         "ramInfo": [
             {
