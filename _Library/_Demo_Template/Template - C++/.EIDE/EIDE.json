@@ -1,0 +1,200 @@
+{
+    "name": "Template - C++",
+    "type": "ARM",
+    "mode": "Release",
+    "toolchain": "AC6",
+    "dependenceList": [
+        {
+            "groupName": "custom",
+            "depList": [
+                {
+                    "name": "default",
+                    "incList": [
+                        ".\\src\\CODE",
+                        ".\\src\\FWLIB\\inc",
+                        ".\\dependence",
+                        ".\\src\\MAIN",
+                        ".\\src\\FWLIB",
+                        ".\\src\\FWLIB\\src",
+                        ".\\src\\SYSTEM\\sys",
+                        ".\\src\\SYSTEM\\delay",
+                        ".\\src\\SYSTEM\\usart",
+                        ".\\src",
+                        ".\\src\\USERLIB",
+                        ".\\src\\SET",
+                        ".\\src\\OUT"
+                    ],
+                    "libList": [],
+                    "sourceDirList": [],
+                    "defineList": [
+                        "STM32F40_41xxx",
+                        "USE_STDPERIPH_DRIVER"
+                    ]
+                }
+            ]
+        },
+        {
+            "groupName": "build-in",
+            "depList": [
+                {
+                    "name": "toolchain",
+                    "incList": [
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\include\\arm_linux",
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\include\\arm_linux_compat",
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\include\\libcxx",
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\include",
+                        ".\\dependence\\build-in\\toolchain"
+                    ],
+                    "sourceDirList": [
+                        ".\\dependence\\build-in\\toolchain"
+                    ],
+                    "libList": [
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\lib"
+                    ],
+                    "defineList": []
+                }
+            ]
+        }
+    ],
+    "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "default",
+        "useCustomScatterFile": false,
+        "scatterFilePath": "undefined",
+        "storageLayout": {
+            "RAM": [
+                {
+                    "tag": "RAM",
+                    "id": 1,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "noInit": false
+                },
+                {
+                    "tag": "RAM",
+                    "id": 2,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "noInit": false
+                },
+                {
+                    "tag": "RAM",
+                    "id": 3,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "noInit": false
+                },
+                {
+                    "tag": "IRAM",
+                    "id": 1,
+                    "mem": {
+                        "startAddr": "0x20000000",
+                        "size": "0x20000"
+                    },
+                    "isChecked": true,
+                    "noInit": false
+                },
+                {
+                    "tag": "IRAM",
+                    "id": 2,
+                    "mem": {
+                        "startAddr": "0x10000000",
+                        "size": "0x10000"
+                    },
+                    "isChecked": true,
+                    "noInit": false
+                }
+            ],
+            "ROM": [
+                {
+                    "tag": "ROM",
+                    "id": 1,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "isStartup": false
+                },
+                {
+                    "tag": "ROM",
+                    "id": 2,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "isStartup": false
+                },
+                {
+                    "tag": "ROM",
+                    "id": 3,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "isStartup": false
+                },
+                {
+                    "tag": "IROM",
+                    "id": 1,
+                    "mem": {
+                        "startAddr": "0x8000000",
+                        "size": "0x100000"
+                    },
+                    "isChecked": true,
+                    "isStartup": true
+                },
+                {
+                    "tag": "IROM",
+                    "id": 2,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "isStartup": false
+                }
+            ]
+        },
+        "options": ""
+    },
+    "uploader": "JLink",
+    "srcDirs": [
+        ".\\src",
+        ".\\dependence"
+    ],
+    "excludeList": [],
+    "outDir": ".\\out",
+    "uploadConfig": {
+        "bin": ".\\out\\AC6\\TemplateTest.hex",
+        "useGuiDownloader": false,
+        "ramInfo": [
+            {
+                "startAddr": "0x20000000",
+                "size": "0x00005000"
+            }
+        ],
+        "jflashPath": null,
+        "baseAddr": "0x08000000",
+        "endianMode": "Little",
+        "cpuInfo": {
+            "vendor": "ST",
+            "cpuName": "STM32F103C8"
+        },
+        "proType": 1,
+        "launchAppAfterProgram": true,
+        "securesChip": false,
+        "speed": 5000
+    }
+}
