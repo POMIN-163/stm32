@@ -414,9 +414,9 @@
               <FilePath>..\FWLIB\src\stm32f4xx_usart.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f4xx_syscfg.h</FileName>
-              <FileType>9</FileType>
-              <FilePath>..\FWLIB\inc\stm32f4xx_syscfg.h</FilePath>
+              <FileName>stm32f4xx_syscfg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWLIB\src\stm32f4xx_syscfg.c</FilePath>
             </File>
           </Files>
         </Group>

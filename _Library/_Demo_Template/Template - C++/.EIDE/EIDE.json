@@ -1,5 +1,5 @@
 {
-    "name": "Template - C++",
+    "name": "cpp",
     "type": "ARM",
     "mode": "Release",
     "toolchain": "AC6",
@@ -16,13 +16,14 @@
                         ".\\src\\MAIN",
                         ".\\src\\FWLIB",
                         ".\\src\\FWLIB\\src",
-                        ".\\src\\SYSTEM\\sys",
-                        ".\\src\\SYSTEM\\delay",
-                        ".\\src\\SYSTEM\\usart",
                         ".\\src",
                         ".\\src\\USERLIB",
                         ".\\src\\SET",
-                        ".\\src\\OUT"
+                        ".\\src\\OUT",
+                        ".\\src\\USERLIB\\Src",
+                        ".\\src\\USERLIB\\Inc",
+                        ".\\src\\USERLIB\\Src_C",
+                        ".\\src\\USERLIB\\Inc_C"
                     ],
                     "libList": [],
                     "sourceDirList": [],
