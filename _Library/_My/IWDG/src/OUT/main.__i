@@ -1,5 +1,0 @@
---cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\SET -I ..\CODE -I ..\FWLIB\inc -I ..\MAIN -I ..\PROJ -I ..\USERLIB -I ..\USERLIB\Inc -I ..\USERLIB\Inc_C
--ID:\Maker\keil5\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
--ID:\Maker\keil5\ARM\CMSIS\Include
--D__UVISION_VERSION="531" -DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER
--o ..\out\main.o --omf_browse ..\out\main.crf --depend ..\out\main.d "..\MAIN\main.cpp"

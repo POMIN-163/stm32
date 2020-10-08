@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\SET;..\CODE;..\FWLIB\inc;..\MAIN;..\PROJ;..\USERLIB\Inc;..\USERLIB\Inc_C</IncludePath>
+              <IncludePath>..\CORE;..\FWLIB\inc;..\MAIN;..\PROJ;..\USERLIB\Inc;..\USERLIB\Inc_C</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -381,12 +381,22 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>CODE</GroupName>
+          <GroupName>CORE</GroupName>
           <Files>
+            <File>
+              <FileName>stm32f4xx_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CORE\stm32f4xx_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f4xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\CORE\system_stm32f4xx.c</FilePath>
+            </File>
             <File>
               <FileName>startup_stm32f40_41xxx.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\CODE\startup_stm32f40_41xxx.s</FilePath>
+              <FilePath>..\CORE\startup_stm32f40_41xxx.s</FilePath>
             </File>
           </Files>
         </Group>
@@ -427,21 +437,6 @@
               <FileName>stm32f4xx_tim.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\FWLIB\src\stm32f4xx_tim.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>SETTING</GroupName>
-          <Files>
-            <File>
-              <FileName>stm32f4xx_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\SET\stm32f4xx_it.c</FilePath>
-            </File>
-            <File>
-              <FileName>system_stm32f4xx.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\SET\system_stm32f4xx.c</FilePath>
             </File>
           </Files>
         </Group>

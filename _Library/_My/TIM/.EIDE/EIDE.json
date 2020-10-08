@@ -10,7 +10,6 @@
                 {
                     "name": "default",
                     "incList": [
-                        ".\\src\\CODE",
                         ".\\src\\FWLIB\\inc",
                         ".\\dependence",
                         ".\\src\\MAIN",
@@ -18,12 +17,12 @@
                         ".\\src\\FWLIB\\src",
                         ".\\src",
                         ".\\src\\USERLIB",
-                        ".\\src\\SET",
                         ".\\src\\OUT",
                         ".\\src\\USERLIB\\Src",
                         ".\\src\\USERLIB\\Inc",
                         ".\\src\\USERLIB\\Src_C",
-                        ".\\src\\USERLIB\\Inc_C"
+                        ".\\src\\USERLIB\\Inc_C",
+                        ".\\src\\CORE"
                     ],
                     "libList": [],
                     "sourceDirList": [],
@@ -38,19 +37,25 @@
             "groupName": "build-in",
             "depList": [
                 {
-                    "name": "toolchain",
+                    "name": "STD",
                     "incList": [
-                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\include\\arm_linux",
-                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\include\\arm_linux_compat",
-                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\include\\libcxx",
                         "D:\\Maker\\keil5\\ARM\\ARMCLANG\\include",
-                        ".\\dependence\\build-in\\toolchain"
+                        ".\\dependence\\build-in\\STD"
                     ],
                     "sourceDirList": [
-                        ".\\dependence\\build-in\\toolchain"
+                        ".\\dependence\\build-in\\STD"
                     ],
                     "libList": [
-                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\lib"
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\lib",
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\lib\\pixolib",
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\lib\\libcxx",
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\lib\\clang",
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\lib\\clang\\11.0.0",
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\lib\\clang\\11.0.0\\include",
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\lib\\clang\\11.0.0\\include\\ppc_wrappers",
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\lib\\clang\\11.0.0\\include\\openmp_wrappers",
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\lib\\clang\\11.0.0\\include\\cuda_wrappers",
+                        "D:\\Maker\\keil5\\ARM\\ARMCLANG\\lib\\armlib"
                     ],
                     "defineList": []
                 }
@@ -186,8 +191,6 @@
                 "size": "0x00005000"
             }
         ],
-        "jflashPath": null,
-        "baseAddr": "0x08000000",
         "endianMode": "Little",
         "cpuInfo": {
             "vendor": "ST",

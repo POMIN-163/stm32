@@ -6,5 +6,5 @@
 #define LED2 PFout(10)
 
 void TIM2_Init(u16 arr,u16 psc);
-
+void TIM14_Init(u16 arr,u16 psc);
 #endif

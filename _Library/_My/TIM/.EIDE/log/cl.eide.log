@@ -858,3 +858,64 @@
 [Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
 
 
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/10/4|14:42:10|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+[Error] : ErrorError: ENOENT: no such file or directory, lstat 'd:\My\keilmake\stm32\_Library\_My\TIM\src\PROJ\EventRecorderStub.scvd'
+	at lstatSync (fs.js:906:3)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\16377\.vscode\extensions\cl.eide-1.13.0\dist\extension.js:1:3766)
+	at c:\Users\16377\.vscode\extensions\cl.eide-1.13.0\dist\extension.js:1:2947
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\16377\.vscode\extensions\cl.eide-1.13.0\dist\extension.js:1:2875)
+	at x.EnumIncDir (c:\Users\16377\.vscode\extensions\cl.eide-1.13.0\dist\extension.js:1:76955)
+	at x.UpdateFileGroup (c:\Users\16377\.vscode\extensions\cl.eide-1.13.0\dist\extension.js:1:76272)
+	at x.onSourceDirChanged (c:\Users\16377\.vscode\extensions\cl.eide-1.13.0\dist\extension.js:1:80162)
+	at EventEmitter.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.13.0\dist\extension.js:1:77080)
+	at EventEmitter.emit (events.js:223:5)
+	at x.emit (c:\Users\16377\.vscode\extensions\cl.eide-1.13.0\dist\extension.js:1:68933)
+	at t.FileWatcher.e.OnRename (c:\Users\16377\.vscode\extensions\cl.eide-1.13.0\dist\extension.js:1:75385)
+	at FSWatcher.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.13.0\dist\extension.js:1:87265)
+	at FSWatcher.emit (events.js:223:5)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/10/5|20:18:03|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/10/5|20:23:32|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/10/7|12:19:03|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/10/7|14:36:29|GMT+0800
+[Error] : Error: ENOENT: no such file or directory, lstat 'f:\_My_Keil\stm32\_Library\_My\TIM\src\PROJ\Proj.uvguix.POMIN.POMIN.tmp'
+	at lstatSync (fs.js:906:3)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\16377\.vscode\extensions\cl.eide-1.9.3\dist\extension.js:1:3657)
+	at c:\Users\16377\.vscode\extensions\cl.eide-1.9.3\dist\extension.js:1:2838
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\16377\.vscode\extensions\cl.eide-1.9.3\dist\extension.js:1:2766)
+	at EnumIncDir (c:\Users\16377\.vscode\extensions\cl.eide-1.9.3\dist\extension.js:1:162466)
+	at E.UpdateFileGroup (c:\Users\16377\.vscode\extensions\cl.eide-1.9.3\dist\extension.js:1:161864)
+	at E.onSourceDirChanged (c:\Users\16377\.vscode\extensions\cl.eide-1.9.3\dist\extension.js:1:164520)
+	at EventEmitter.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.9.3\dist\extension.js:1:162591)
+	at EventEmitter.emit (events.js:223:5)
+	at E.emit (c:\Users\16377\.vscode\extensions\cl.eide-1.9.3\dist\extension.js:1:157207)
+	at t.FileWatcher.e.OnRename (c:\Users\16377\.vscode\extensions\cl.eide-1.9.3\dist\extension.js:1:161112)
+	at FSWatcher.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.9.3\dist\extension.js:1:54721)
+	at FSWatcher.emit (events.js:223:5)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/10/7|21:58:38|GMT+0800
+
+

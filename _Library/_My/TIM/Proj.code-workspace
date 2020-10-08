@@ -19,7 +19,9 @@
             "usart.h": "c",
             "stm32f4xx_gpio.h": "c",
             "exti.h": "c",
-            "led..beep..key.h": "c"
-        }
+            "led..beep..key.h": "c",
+            "tim.h": "c"
+        },
+        "terminal.explorerKind": "integrated"
     }
 }
