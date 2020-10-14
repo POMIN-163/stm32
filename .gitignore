@@ -43,9 +43,7 @@
 
 *.tra
 
-*.dep          
-
-JLinkLog.txt
+*.dep         
 
 *.iex
 
@@ -54,7 +52,3 @@ JLinkLog.txt
 *.sct
 
 *.map
-
-*.Administrator
-
-*.uvopt
