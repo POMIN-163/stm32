@@ -1,11 +1,11 @@
-/out/
-/obj/
-/build-in/
-/OUT/
-/Listings/
-/DebugConfig/
-/OBJ/
-/Objects/
+out/
+obj/
+build-in/
+OUT/
+Listings/
+DebugConfig/
+OBJ/
+Objects/
 
 *.bak
 
@@ -52,3 +52,5 @@
 *.sct
 
 *.map
+
+*.POMIN
