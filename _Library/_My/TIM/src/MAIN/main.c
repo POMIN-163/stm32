@@ -20,6 +20,7 @@ int main ()
     GPIO_Init(GPIOF, &gpio);
     GPIO_SetBits(GPIOF, GPIO_Pin_10);
     TIM14_Init(500, 84);
+    TIM14_Init(500, 84);
     while(1){
     /*   GPIO_SetBits(GPIOF, GPIO_Pin_10);
        _SYS_Delay_ms(500);
@@ -32,3 +33,4 @@ int main ()
 		TIM_SetCompare1(TIM14,led0pwmval);	//修改比较值，修改占空比
     }
 }
+
