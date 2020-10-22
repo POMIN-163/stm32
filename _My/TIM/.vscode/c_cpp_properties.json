@@ -21,7 +21,21 @@
             ],
             "defines": [
                 "STM32F40_41xxx",
-                "USE_STDPERIPH_DRIVER"
+                "USE_STDPERIPH_DRIVER",
+                "__CC_ARM",
+                "__forceinline=",
+                "__inline=",
+                "__asm(x)=",
+                "__declspec(x)=",
+                "__attribute__(x)=",
+                "__nonnull__(x)=",
+                "__int64=int",
+                "__irq=",
+                "__swi=",
+                "__weak=",
+                "__register=",
+                "__pure=",
+                "__value_in_regs="
             ],
             "intelliSenseMode": "${default}"
         }
