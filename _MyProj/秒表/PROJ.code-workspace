@@ -29,6 +29,7 @@
             "tim.h": "c",
             "lm393.h": "c",
             "tm1637.h": "c"
-        }
+        },
+        "git.ignoreLimitWarning": true
     }
 }
