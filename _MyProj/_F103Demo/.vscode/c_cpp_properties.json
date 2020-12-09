@@ -1,0 +1,43 @@
+{
+    "configurations": [
+        {
+            "name": "win32",
+            "includePath": [
+                "f:\\_My_Keil\\stm32\\32Demo\\_F103Demo\\src\\FWLIB\\inc",
+                "f:\\_My_Keil\\stm32\\32Demo\\_F103Demo\\dependence",
+                "f:\\_My_Keil\\stm32\\32Demo\\_F103Demo\\src\\MAIN",
+                "f:\\_My_Keil\\stm32\\32Demo\\_F103Demo\\src\\FWLIB",
+                "f:\\_My_Keil\\stm32\\32Demo\\_F103Demo\\src\\FWLIB\\src",
+                "f:\\_My_Keil\\stm32\\32Demo\\_F103Demo\\src\\SYSTEM\\sys",
+                "f:\\_My_Keil\\stm32\\32Demo\\_F103Demo\\src\\SYSTEM\\delay",
+                "f:\\_My_Keil\\stm32\\32Demo\\_F103Demo\\src\\SYSTEM\\usart",
+                "f:\\_My_Keil\\stm32\\32Demo\\_F103Demo\\src\\Proj",
+                "f:\\_My_Keil\\stm32\\32Demo\\_F103Demo\\src\\USERLIB\\LED",
+                "f:\\_My_Keil\\stm32\\32Demo\\_F103Demo\\src\\CORE",
+                "f:\\_My_Keil\\stm32\\32Demo\\_F103Demo\\src\\USERLIB",
+                "D:\\Maker\\keil5\\ARM\\ARMCC\\include",
+                "f:\\_My_Keil\\stm32\\32Demo\\_F103Demo\\dependence\\build-in\\STD"
+            ],
+            "defines": [
+                "STM32F40_41xxx",
+                "USE_STDPERIPH_DRIVER",
+                "__CC_ARM",
+                "__forceinline=",
+                "__inline=",
+                "__asm(x)=",
+                "__declspec(x)=",
+                "__attribute__(x)=",
+                "__nonnull__(x)=",
+                "__int64=int",
+                "__irq=",
+                "__swi=",
+                "__weak=",
+                "__register=",
+                "__pure=",
+                "__value_in_regs="
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

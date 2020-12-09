@@ -6,6 +6,7 @@ Listings/
 DebugConfig/
 OBJ/
 Objects/
+/CoreBroad/
 *.bak
 *.ddk
 *.edk

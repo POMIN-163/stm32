@@ -1,0 +1,29 @@
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/12/9|10:55:49|GMT+0800
+[Error] : Error: ENOENT: no such file or directory, lstat 'f:\_My_Keil\stm32\32Demo\_F407Demo\src\OBJ\system_stm32f4xx.crf'
+	at lstatSync (fs.js:906:3)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (d:\Program Files\VSCode\Microsoft VS Code\data\extensions\cl.eide-1.10.1\dist\extension.js:1:3702)
+	at d:\Program Files\VSCode\Microsoft VS Code\data\extensions\cl.eide-1.10.1\dist\extension.js:1:2883
+	at Array.forEach (<anonymous>)
+	at s.GetList (d:\Program Files\VSCode\Microsoft VS Code\data\extensions\cl.eide-1.10.1\dist\extension.js:1:2811)
+	at EnumIncDir (d:\Program Files\VSCode\Microsoft VS Code\data\extensions\cl.eide-1.10.1\dist\extension.js:1:170263)
+	at E.UpdateFileGroup (d:\Program Files\VSCode\Microsoft VS Code\data\extensions\cl.eide-1.10.1\dist\extension.js:1:169642)
+	at E.onSourceDirChanged (d:\Program Files\VSCode\Microsoft VS Code\data\extensions\cl.eide-1.10.1\dist\extension.js:1:173300)
+	at EventEmitter.<anonymous> (d:\Program Files\VSCode\Microsoft VS Code\data\extensions\cl.eide-1.10.1\dist\extension.js:1:170388)
+	at EventEmitter.emit (events.js:223:5)
+	at E.emit (d:\Program Files\VSCode\Microsoft VS Code\data\extensions\cl.eide-1.10.1\dist\extension.js:1:164697)
+	at t.FileWatcher.e.OnRename (d:\Program Files\VSCode\Microsoft VS Code\data\extensions\cl.eide-1.10.1\dist\extension.js:1:168777)
+	at FSWatcher.<anonymous> (d:\Program Files\VSCode\Microsoft VS Code\data\extensions\cl.eide-1.10.1\dist\extension.js:1:56372)
+	at FSWatcher.emit (events.js:223:5)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/12/9|11:03:31|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/12/9|11:04:24|GMT+0800
+
+
