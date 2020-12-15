@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "name": "win32",
+            "includePath": [
+                "f:\\_My_Keil\\stm32\\_MyProj\\Demo_for_F407_Explorer\\src\\CODE",
+                "f:\\_My_Keil\\stm32\\_MyProj\\Demo_for_F407_Explorer\\src\\FWLIB\\inc",
+                "f:\\_My_Keil\\stm32\\_MyProj\\Demo_for_F407_Explorer\\dependence",
+                "f:\\_My_Keil\\stm32\\_MyProj\\Demo_for_F407_Explorer\\src\\MAIN",
+                "f:\\_My_Keil\\stm32\\_MyProj\\Demo_for_F407_Explorer\\src\\FWLIB",
+                "f:\\_My_Keil\\stm32\\_MyProj\\Demo_for_F407_Explorer\\src\\FWLIB\\src",
+                "f:\\_My_Keil\\stm32\\_MyProj\\Demo_for_F407_Explorer\\src\\SYSTEM\\sys",
+                "f:\\_My_Keil\\stm32\\_MyProj\\Demo_for_F407_Explorer\\src\\SYSTEM\\delay",
+                "f:\\_My_Keil\\stm32\\_MyProj\\Demo_for_F407_Explorer\\src\\SYSTEM\\usart",
+                "f:\\_My_Keil\\stm32\\_MyProj\\Demo_for_F407_Explorer\\src\\Proj",
+                "f:\\_My_Keil\\stm32\\_MyProj\\Demo_for_F407_Explorer\\src\\USERLIB",
+                "D:\\Maker\\keil5\\ARM\\ARMCC\\include",
+                "f:\\_My_Keil\\stm32\\_MyProj\\Demo_for_F407_Explorer\\dependence\\build-in\\STD"
+            ],
+            "defines": [
+                "STM32F40_41xxx",
+                "USE_STDPERIPH_DRIVER",
+                "__CC_ARM",
+                "__forceinline=",
+                "__inline=",
+                "__asm(x)=",
+                "__declspec(x)=",
+                "__attribute__(x)=",
+                "__nonnull__(x)=",
+                "__int64=int",
+                "__irq=",
+                "__swi=",
+                "__weak=",
+                "__register=",
+                "__pure=",
+                "__value_in_regs="
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}
