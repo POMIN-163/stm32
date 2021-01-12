@@ -11,7 +11,7 @@ u8 G_time[2] = {0, 0,};
 
 unsigned const char LED_0_F[17] =
 {// 0	 1	  2	   3	4	 5	  6	   7	8	 9	  A	   b	C    d	  E    F    -
-	0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0x80,0x90,0x8C,0xBF,0xC6,0xA1,0x86,0xFF,0xbf
+	0xc0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0x80,0x90,0x8C,0xBF,0xC6,0xA1,0x86,0xFF,0xbf
 };
 
 void TIM3_Init(u16 arr,u16 psc);// 计时
@@ -136,13 +136,16 @@ void TIM3_IRQHandler(void) {
 // 定时器2中断, 数码管刷新
 void TIM2_IRQHandler(void) {
 	if (TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET) {
-        Display();
+       // Display();
     	TIM_ClearITPendingBit(TIM2, TIM_IT_Update);  //清除TIMx更新中断标志
 	}
 }
 int main(void) {
     Init();// 各个管脚初始化
     while(1) {
+		LED_OUT(LED_0_F[0]);
+		LED_OUT(0xf0);
+		RCLK = 0; RCLK = 1;
     }
 }
 

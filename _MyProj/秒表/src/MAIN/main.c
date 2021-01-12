@@ -94,8 +94,8 @@ void Init(void) {
         GPIO_Mode_Out_PP, GPIO_Speed_50MHz
     );
     delay_init();
-    TIM2_Init(10, 720);// 100us
-    TIM3_Init(100, 7200);// 10ms
+    TIM2_Init(10, 720);// 72MHz/720 = 100kHz -- 10us *10 = 100us
+    TIM3_Init(100, 7200);// 720MHz/7200 = 10KHz -- 100us * 100 = 10ms
     TM_Init();
 }
 u8 Keyscan(void){

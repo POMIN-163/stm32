@@ -3,20 +3,20 @@
         {
             "name": "win32",
             "includePath": [
-                "f:\\_My_Keil\\电子实训\\数码管 - 595\\dependence",
-                "f:\\_My_Keil\\电子实训\\数码管 - 595\\src\\PROJ",
-                "f:\\_My_Keil\\电子实训\\数码管 - 595\\src\\MAIN",
-                "f:\\_My_Keil\\电子实训\\数码管 - 595\\src\\FWLIB\\inc",
-                "f:\\_My_Keil\\电子实训\\数码管 - 595\\src\\FWLIB\\src",
-                "f:\\_My_Keil\\电子实训\\数码管 - 595\\src\\USERLIB\\Src",
-                "f:\\_My_Keil\\电子实训\\数码管 - 595\\src\\USERLIB\\Inc",
-                "f:\\_My_Keil\\电子实训\\数码管 - 595\\src\\STARTUP",
-                "f:\\_My_Keil\\电子实训\\数码管 - 595\\src\\USERLIB\\inc",
-                "f:\\_My_Keil\\电子实训\\数码管 - 595\\src\\USERLIB\\src",
-                "f:\\_My_Keil\\电子实训\\数码管 - 595\\src\\USERLIB",
-                "f:\\_My_Keil\\电子实训\\数码管 - 595\\src",
+                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595\\dependence",
+                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595\\src\\PROJ",
+                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595\\src\\MAIN",
+                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595\\src\\FWLIB\\inc",
+                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595\\src\\FWLIB\\src",
+                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595\\src\\USERLIB\\Src",
+                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595\\src\\USERLIB\\Inc",
+                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595\\src\\STARTUP",
+                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595\\src\\USERLIB\\inc",
+                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595\\src\\USERLIB\\src",
+                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595\\src\\USERLIB",
+                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595\\src",
                 "D:\\Maker\\keil5\\ARM\\ARMCLANG\\include",
-                "f:\\_My_Keil\\电子实训\\数码管 - 595\\dependence\\build-in\\STD"
+                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595\\dependence\\build-in\\STD"
             ],
             "defines": [
                 "STM32F103x8",

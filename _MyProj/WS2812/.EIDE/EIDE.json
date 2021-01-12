@@ -1,0 +1,195 @@
+{
+    "name": "WS2812",
+    "type": "ARM",
+    "mode": "Release",
+    "toolchain": "AC5",
+    "dependenceList": [
+        {
+            "groupName": "custom",
+            "depList": [
+                {
+                    "name": "default",
+                    "incList": [
+                        ".\\src\\FWLIB\\inc",
+                        ".\\dependence",
+                        ".\\src\\MAIN",
+                        ".\\src\\FWLIB",
+                        ".\\src\\FWLIB\\src",
+                        ".\\src\\SYSTEM\\sys",
+                        ".\\src\\SYSTEM\\delay",
+                        ".\\src\\SYSTEM\\usart",
+                        ".\\src\\Proj",
+                        ".\\src\\CORE",
+                        ".\\src\\USERLIB"
+                    ],
+                    "libList": [],
+                    "sourceDirList": [],
+                    "defineList": [
+                        "STM32F40_41xxx",
+                        "USE_STDPERIPH_DRIVER"
+                    ]
+                }
+            ]
+        },
+        {
+            "groupName": "build-in",
+            "depList": [
+                {
+                    "name": "STD",
+                    "incList": [
+                        "D:\\Maker\\keil5\\ARM\\ARMCC\\include",
+                        ".\\dependence\\build-in\\STD"
+                    ],
+                    "sourceDirList": [
+                        ".\\dependence\\build-in\\STD"
+                    ],
+                    "libList": [
+                        "D:\\Maker\\keil5\\ARM\\ARMCC\\lib",
+                        "D:\\Maker\\keil5\\ARM\\ARMCC\\lib\\cpplib",
+                        "D:\\Maker\\keil5\\ARM\\ARMCC\\lib\\armlib"
+                    ],
+                    "defineList": []
+                }
+            ]
+        }
+    ],
+    "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "default",
+        "useCustomScatterFile": false,
+        "scatterFilePath": "undefined",
+        "storageLayout": {
+            "RAM": [
+                {
+                    "tag": "RAM",
+                    "id": 1,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "noInit": false
+                },
+                {
+                    "tag": "RAM",
+                    "id": 2,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "noInit": false
+                },
+                {
+                    "tag": "RAM",
+                    "id": 3,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "noInit": false
+                },
+                {
+                    "tag": "IRAM",
+                    "id": 1,
+                    "mem": {
+                        "startAddr": "0x20000000",
+                        "size": "0x20000"
+                    },
+                    "isChecked": true,
+                    "noInit": false
+                },
+                {
+                    "tag": "IRAM",
+                    "id": 2,
+                    "mem": {
+                        "startAddr": "0x10000000",
+                        "size": "0x10000"
+                    },
+                    "isChecked": true,
+                    "noInit": false
+                }
+            ],
+            "ROM": [
+                {
+                    "tag": "ROM",
+                    "id": 1,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "isStartup": false
+                },
+                {
+                    "tag": "ROM",
+                    "id": 2,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "isStartup": false
+                },
+                {
+                    "tag": "ROM",
+                    "id": 3,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "isStartup": false
+                },
+                {
+                    "tag": "IROM",
+                    "id": 1,
+                    "mem": {
+                        "startAddr": "0x8000000",
+                        "size": "0x100000"
+                    },
+                    "isChecked": true,
+                    "isStartup": true
+                },
+                {
+                    "tag": "IROM",
+                    "id": 2,
+                    "mem": {
+                        "startAddr": "0x0",
+                        "size": "0x0"
+                    },
+                    "isChecked": false,
+                    "isStartup": false
+                }
+            ]
+        },
+        "options": ""
+    },
+    "uploader": "JLink",
+    "srcDirs": [
+        ".\\src",
+        ".\\dependence"
+    ],
+    "excludeList": [],
+    "outDir": ".\\out",
+    "uploadConfig": {
+        "bin": ".\\out\\AC5\\LED.hex",
+        "useGuiDownloader": false,
+        "ramInfo": [
+            {
+                "startAddr": "0x20000000",
+                "size": "0x00005000"
+            }
+        ],
+        "endianMode": "Little",
+        "cpuInfo": {
+            "vendor": "ST",
+            "cpuName": "STM32F103C8"
+        },
+        "proType": 1,
+        "launchAppAfterProgram": true,
+        "securesChip": false,
+        "speed": 5000
+    }
+}
