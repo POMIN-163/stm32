@@ -6,7 +6,7 @@ Listings/
 DebugConfig/
 OBJ/
 Objects/
-/CoreBroad/
+/_STM32Broad/
 *.bak
 *.ddk
 *.edk
