@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Proj",
+            "includePath": [
+				".\\FWLIB\\inc",
+				".\\MAIN",
+				".\\FWLIB",
+				".\\SYSTEM\\sys",
+				".\\SYSTEM\\delay",
+				".\\SYSTEM\\usart",
+				".\\Proj",
+				".\\CORE",
+				".\\USERLIB\\inc",
+				".\\USER\\Inc"
+            ],
+            "defines": [
+                "STM32F40_41xxx",
+                "USE_STDPERIPH_DRIVER"
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

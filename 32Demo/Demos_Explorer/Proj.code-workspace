@@ -1,0 +1,29 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "C_Cpp.default.intelliSenseMode": "gcc-x86",
+        "files.autoGuessEncoding": true,
+        "C_Cpp.default.cppStandard": "c++11",
+        "C_Cpp.default.cStandard": "c99",
+        "files.associations": {
+            "systick.h": "c",
+            "usart.h": "c",
+            "gpio.h": "c",
+            "stm32f4xx.h": "c",
+            "led.h": "c",
+            "breath.h": "c",
+            "pominlib.h": "c",
+            "nvic.h": "c",
+            "key.h": "c",
+            "beep.h": "c",
+            "tim.h": "c",
+            "exti.h": "c",
+            "device.h": "c",
+            "hc_sr04.h": "c"
+        }
+    }
+}

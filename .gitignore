@@ -7,6 +7,10 @@ DebugConfig/
 OBJ/
 Objects/
 /_STM32Broad/
+
+old_/
+_Download/
+
 *.bak
 *.ddk
 *.edk

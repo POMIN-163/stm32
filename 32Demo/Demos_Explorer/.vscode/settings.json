@@ -1,0 +1,12 @@
+{
+     "files.exclude": {
+        "**/Objects": true,
+        "**/Listings": true,
+        "**/OBJ": true,
+        "**/Proj": true,
+        "**/*.bat": true,
+        "**/*.code-workspace": true
+    },
+    "files.encoding": "gb2312",
+    "editor.fontFamily": "Consolas, OPPOSans",
+}

@@ -1,7 +1,10 @@
 {
-    "KeilAssistant.Project.ExcludeList": [
-
-        "template.uvproj",
-        "template.uvprojx"
-    ]
+     "files.exclude": {
+        "**/Objects": true,
+        "**/Listings": true,
+        "**/*.bat": true,
+        "**/*.code-workspace": true
+    },
+    "files.encoding": "gb2312",
+    "editor.fontFamily": "Consolas, OPPOSans",
 }

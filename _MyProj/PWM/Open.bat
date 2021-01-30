@@ -1,4 +1,4 @@
-explorer "%~dp0src\PROJ\Car.uvprojx"
-explorer "%~dp0Car.code-workspace"
+explorer "%~dp0PROJ\Car.uvprojx"
+explorer "%~dp0PWM.code-workspace"
 
 exit

@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Proj",
+            "includePath": [
+                ".\\Core",
+                ".\\User\\Inc",
+                ".\\Library\\Inc"
+            ],
+            "defines": [
+                "STM32F40_41xxx",
+                "USE_STDPERIPH_DRIVER"
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

@@ -3,38 +3,21 @@
         {
             "name": "win32",
             "includePath": [
-                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595 - 自制\\dependence",
-                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595 - 自制\\src\\PROJ",
-                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595 - 自制\\src\\MAIN",
-                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595 - 自制\\src\\FWLIB\\inc",
-                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595 - 自制\\src\\FWLIB\\src",
-                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595 - 自制\\src\\USERLIB\\Src",
-                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595 - 自制\\src\\USERLIB\\Inc",
-                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595 - 自制\\src\\STARTUP",
-                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595 - 自制\\src\\USERLIB\\inc",
-                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595 - 自制\\src\\USERLIB\\src",
-                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595 - 自制\\src\\USERLIB",
-                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595 - 自制\\src",
-                "D:\\Maker\\keil5\\ARM\\ARMCLANG\\include",
-                "f:\\_My_Keil\\stm32\\_MyProj\\数码管 - 595 - 自制\\dependence\\build-in\\STD"
+				".\\FWLIB\\inc",
+				".\\MAIN",
+				".\\FWLIB",
+				".\\FWLIB\\src",
+				".\\SYSTEM\\sys",
+				".\\SYSTEM\\delay",
+				".\\SYSTEM\\usart",
+				".\\Proj",
+				".\\USERLIB\\LED",
+				".\\CORE",
+				".\\USERLIB"
             ],
             "defines": [
-                "STM32F103x8",
-                "USE_STDPERIPH_DRIVER",
-                "__CC_ARM",
-                "__forceinline=",
-                "__inline=",
-                "__asm(x)=",
-                "__declspec(x)=",
-                "__attribute__(x)=",
-                "__nonnull__(x)=",
-                "__int64=int",
-                "__irq=",
-                "__swi=",
-                "__weak=",
-                "__register=",
-                "__pure=",
-                "__value_in_regs="
+                "STM32F10X_HD",
+                "USE_STDPERIPH_DRIVER"
             ],
             "intelliSenseMode": "${default}"
         }
