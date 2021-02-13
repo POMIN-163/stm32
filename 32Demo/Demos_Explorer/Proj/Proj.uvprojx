@@ -80,7 +80,7 @@
             <nStopB2X>0</nStopB2X>
           </BeforeMake>
           <AfterMake>
-            <RunUserProg1>1</RunUserProg1>
+            <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
             <UserProg1Name>.\copyOUT.exe</UserProg1Name>
             <UserProg2Name></UserProg2Name>
@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\Proj;..\FWLIB\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\MAIN;..\USERLIB\Inc;..\USER\Inc</IncludePath>
+              <IncludePath>..\CORE;..\Proj;..\FWLIB\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\MAIN;..\USERLIB\Inc;..\USER\Inc;..\USERLIB\Calc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -527,6 +527,26 @@
               <FileName>hc_sr04.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\USER\Src\hc_sr04.c</FilePath>
+            </File>
+            <File>
+              <FileName>touchkey.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\Src\touchkey.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>CALCLIB</GroupName>
+          <Files>
+            <File>
+              <FileName>sort.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USERLIB\Calc\sort.c</FilePath>
+            </File>
+            <File>
+              <FileName>fun.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USERLIB\Calc\fun.c</FilePath>
             </File>
           </Files>
         </Group>

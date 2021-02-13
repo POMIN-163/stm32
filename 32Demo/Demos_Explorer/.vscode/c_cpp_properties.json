@@ -12,7 +12,8 @@
 				".\\Proj",
 				".\\CORE",
 				".\\USERLIB\\inc",
-				".\\USER\\Inc"
+                ".\\USER\\Inc",
+                ".\\USERLIB\\Calc"
             ],
             "defines": [
                 "STM32F40_41xxx",

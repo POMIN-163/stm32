@@ -4,6 +4,7 @@
 
 #define TRIG GPIOB, GPIO_Pin_5
 #define ECHO GPIOB, GPIO_Pin_6
+
 #define HC_TIM TIM9
 #define HC_IRQ TIM1_BRK_TIM9_IRQn
 

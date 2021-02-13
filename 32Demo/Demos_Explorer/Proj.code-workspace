@@ -23,7 +23,12 @@
             "tim.h": "c",
             "exti.h": "c",
             "device.h": "c",
-            "hc_sr04.h": "c"
+            "hc_sr04.h": "c",
+            "touch.h": "c",
+            "sort.h": "c",
+            "math.h": "c",
+            "fun.h": "c",
+            "touchkey.h": "c"
         }
     }
 }

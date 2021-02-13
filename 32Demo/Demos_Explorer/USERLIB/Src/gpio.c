@@ -49,27 +49,11 @@ void gpioOutputToggle(GPIO_TypeDef* GPIOx, uint32_t GPIO_Pin) {
 }
 void gpioAFConf(
     GPIO_TypeDef* GPIOx, uint32_t GPIO_Pin, GPIOSpeed_TypeDef GPIO_Speed,
-    GPIOOType_TypeDef GPIO_OType, GPIOPuPd_TypeDef GPIO_PuPd,
-    Clock_TypeDef Clock_AxBx, uint32_t RCC_AxBxPeriph, uint8_t GPIO_AF
+    GPIOOType_TypeDef GPIO_OType, GPIOPuPd_TypeDef GPIO_PuPd, uint8_t GPIO_AF
 ) {
     uint8_t i;
     GPIO_InitTypeDef GPIO_InitStruct;
     uint16_t GPIO_PinSource;
-    switch (Clock_AxBx)
-    {
-    case Clock_AHB1: RCC_AHB1PeriphClockCmd(RCC_AxBxPeriph, ENABLE);
-        break;
-    case Clock_AHB2: RCC_AHB2PeriphClockCmd(RCC_AxBxPeriph, ENABLE);
-        break;
-    case Clock_AHB3: RCC_AHB3PeriphClockCmd(RCC_AxBxPeriph, ENABLE);
-        break;
-    case Clock_APB1: RCC_APB1PeriphClockCmd(RCC_AxBxPeriph, ENABLE);
-        break;
-    case Clock_APB2: RCC_APB2PeriphClockCmd(RCC_AxBxPeriph, ENABLE);
-        break;
-    default:
-        break;
-    }
 	switch ((uint32_t)GPIOx)
 	{
 	case GPIOA_BASE: RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN; break;
@@ -90,10 +74,10 @@ void gpioAFConf(
     GPIO_InitStruct.GPIO_Speed = GPIO_Speed;
     GPIO_InitStruct.GPIO_OType = GPIO_OType;
     GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd;
-    GPIO_Init(GPIOx, &GPIO_InitStruct);
-
     for ( i = 0; i < 16; i++) {
         if((0x01 << i) == GPIO_Pin) GPIO_PinSource = i;
     }
     GPIO_PinAFConfig(GPIOx, GPIO_PinSource, GPIO_AF);
+
+    GPIO_Init(GPIOx, &GPIO_InitStruct);
 }
