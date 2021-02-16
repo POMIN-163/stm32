@@ -23,23 +23,30 @@ void reportTime(void) {
 }
 void reportTouch(void) {
     printf("Touch is Press\r\n");
-    va_list();
 }
 void reportExti(void) {
     printf("EXTI is Press\r\n");
 }
+void reportInit(void) {
+    printf("Touch Key: %d", touchDefult); // 触摸按键 默认值
+    printf("LCD ID: %x\r\n", lcddev.id);  // 打印 LCD ID
+}
 void Init(void) {
+    //------------------ 开发板初始化 -------------------//
     nvicGroupConf(NVIC_PriorityGroup_2);
     sysConf(168, 1);      // systick 配置
-    ledInit();            // led 绿
+    ledInit();            // led
     keyInit();            // 按键
     beepInit();           // 蜂鸣器
-    // hcsr04Init();      // 超声波传感器
-    uart_init(115200);    // 串口
+    uart_init(115200);    // 调试串口
     touchInit();          // 触摸按键
+    LCD_Init();           // LCD 显示屏
     systemClockOn();      // 时钟片轮
     systemCallFun();      // 响应函数挂载
     breathLedInit();      // 呼吸灯
+    reportInit();         // 上报初始化状态
+    //------------------ 模块初始化 -------------------//
+    // hcsr04Init();      // 超声波传感器
 }
 static void systemClockOn(void) {
     timBaseConf(TIM10, 84, 1000, TIM_CounterMode_Up, TIM_CKD_DIV1);

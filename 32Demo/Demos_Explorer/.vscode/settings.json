@@ -3,7 +3,6 @@
         "**/Objects": true,
         "**/Listings": true,
         "**/OBJ": true,
-        "**/Proj": true,
         "**/*.bat": true,
         "**/*.code-workspace": true
     },

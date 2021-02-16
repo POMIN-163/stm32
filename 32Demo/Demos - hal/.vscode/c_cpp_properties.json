@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Proj",
+            "includePath": [
+                ".\\Library\\Peripheral\\inc",
+                ".\\Library\\Calc\\inc",
+                ".\\Library\\Core",
+                ".\\User\\Drive\\System",
+                ".\\User\\Drive\\Inc",
+                ".\\User\\Lib\\Inc",
+                ".\\User\\Main"
+            ],
+            "defines": [
+                "STM32F407xx",
+                "USE_HAL_DRIVER",
+                "USE_VSCODE",
+                "__CC_ARM ",
+                "USE_FULL_ASSERT"
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,5 @@
+Load "F:\\_My_Main\\Stm32\\32Demo\\Demos\\Keil\\Obj\\Proj.axf" 
+_____^
+*** error 56: cannot open file
+Error: Flash Download failed  -  Could not load file 'F:\_My_Main\Stm32\32Demo\Demos\Keil\Obj\Proj.axf'
+Flash Load finished at 14:50:38

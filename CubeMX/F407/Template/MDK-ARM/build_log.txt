@@ -1,0 +1,14 @@
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Maker\keil5\ARM\ARMCC\Bin'
+Build target 'Template'
+compiling main.c...
+../Core/Src/main.c(60): error:  #147: declaration is incompatible with "u8 USART_RX_BUF[200]"  (declared at line 22 of "../Core/Inc/usart.h")
+  uint8_t USART_RX_BUF[100];     //接收缓冲,最大USART_REC_LEN个字节.
+../Core/Src/main.c(67): error:  #147: declaration is incompatible with "u8 aRxBuffer[1]"  (declared at line 27 of "../Core/Inc/usart.h")
+  uint8_t aRxBuffer[100];
+../Core/Src/main.c(118): warning:  #223-D: function "MX_USART1_UART_Init" declared implicitly
+    MX_USART1_UART_Init();
+../Core/Src/main.c: 1 warning, 2 errors
+compiling usart.c...
+"Template\Template.axf" - 2 Error(s), 1 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:00

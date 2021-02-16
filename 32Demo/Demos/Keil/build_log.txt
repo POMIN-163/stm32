@@ -1,0 +1,17 @@
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Maker\keil5\ARM\ARMCC\Bin'
+Build target 'Proj'
+compiling main.c...
+..\User\Main\main.c(4): warning:  #47-D: incompatible redefinition of macro "putchar"  (declared at line 736 of "D:\Maker\keil5\ARM\ARMCC\Bin\..\include\stdio.h")
+  #define putchar(x) USART1->DR = x; while((USART1->SR & 0X40) == 0)
+..\User\Main\main.c(26): warning:  #1182-D: a declaration cannot have a label
+                  putnum(va_arg_(ap, int));
+..\User\Main\main.c(32): error:  #513: a value of type "char *" cannot be assigned to an entity of type "uint16_t"
+                  putstr(va_arg_(ap, char *));
+..\User\Main\main.c(24): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "i"  (declared at line 26)
+          switch (*fmt) {
+          ^
+..\User\Main\main.c: 3 warnings, 1 error
+".\Obj\Proj.axf" - 1 Error(s), 3 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:01

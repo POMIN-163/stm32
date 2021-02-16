@@ -8,4 +8,6 @@
 #include "hc_sr04.h"   // ³¬Éù²¨Ä£¿é
 #include "touchkey.h"  // ´¥Ãþ°´¼ü
 
+#include "lcd.h"
+
 #endif

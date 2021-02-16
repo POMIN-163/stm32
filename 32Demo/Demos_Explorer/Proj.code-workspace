@@ -28,7 +28,12 @@
             "sort.h": "c",
             "math.h": "c",
             "fun.h": "c",
-            "touchkey.h": "c"
+            "touchkey.h": "c",
+            "lcd.h": "c",
+            "font.h": "c",
+            "delay.h": "c",
+            "stm32f4xx_conf.h": "c",
+            "stdio.h": "c"
         }
     }
 }
