@@ -1,26 +1,34 @@
 #include "command.h"
 
+#if true == USE_SHELL
 // 导出到命令列表里 s 开头是查询命令, c 开头是命令, t 开头是转换命令
 Shell shell;
-int8_t  _int8;
-int16_t _int16;
-int32_t _int32;
-int32_t *_point;
+int8_t  _int8_;
+int16_t _int16_;
+int32_t _int32_;
+int32_t *_point_;
 SHELL_EXPORT_VAR(SHELL_CMD_PERMISSION(0) |
-                        SHELL_CMD_TYPE(SHELL_TYPE_VAR_INT),   _int32, &_int32, _int32);
+                        SHELL_CMD_TYPE(SHELL_TYPE_VAR_INT),   _int32, &_int32_, _int32);
 SHELL_EXPORT_VAR(SHELL_CMD_PERMISSION(0) |
-                        SHELL_CMD_TYPE(SHELL_TYPE_VAR_SHORT), _int16, &_int16, _int16);
+                        SHELL_CMD_TYPE(SHELL_TYPE_VAR_SHORT), _int16, &_int16_, _int16);
 SHELL_EXPORT_VAR(SHELL_CMD_PERMISSION(0) |
-                        SHELL_CMD_TYPE(SHELL_TYPE_VAR_CHAR),  _int8,  &_int8,  _int8);
+                        SHELL_CMD_TYPE(SHELL_TYPE_VAR_CHAR),  _int8,  &_int8_,  _int8);
 SHELL_EXPORT_VAR(SHELL_CMD_PERMISSION(0) |
-                        SHELL_CMD_TYPE(SHELL_TYPE_VAR_POINT), _point, &_point, _point);
+                        SHELL_CMD_TYPE(SHELL_TYPE_VAR_POINT), _point, &_point_, _point);
+#endif
 
 void reportInit(void) {
     printInfo("Touch Val: %d", touchDefault); // 触摸按键 默认值
     printInfo("LCD ID: 0x%x", lcddev.id);     // 打印 LCD ID
 }
 void reportTime(void) {
-    printInfo("Timer1: %d, Timer2: %d", gTime0, gTime1);
+    printInfo("Tim10: %d", gTime0);
+    printInfo(
+        "Date:%04d - %02d - %02d Week: %d "
+        "Time:%02d:%02d:%02d",
+        dateNow.RTC_Year + 2000, dateNow.RTC_Month, dateNow.RTC_Date,
+        dateNow.RTC_WeekDay, timeNow.RTC_Hours, timeNow.RTC_Minutes,
+        timeNow.RTC_Seconds);
 }
 void conver(char cmd, int32_t value) {
     switch(cmd) {
@@ -91,8 +99,8 @@ void commandInit(void) {
     elog_set_fmt(ELOG_LVL_DEBUG, ELOG_FMT_ALL & ~(ELOG_FMT_TIME| // 除了时间、进程信息、线程信息外全部输出
                  ELOG_FMT_P_INFO | ELOG_FMT_T_INFO));
     elog_set_fmt(ELOG_LVL_VERBOSE, ELOG_FMT_ALL);                // 输出所有内容
-    elog_start();                                                // 启动 elog
     elog_set_text_color_enabled(true);                           // 使能多彩颜色
+    elog_start();                                                // 启动 elog
 #endif
 }
 #if 0

@@ -107,14 +107,23 @@
 #define USE_ELOG          true  // 启用 easyLogger
 #define USE_CM_BACKTRACE  true  // 启用致命错误拦截
 
+// 一些开源库
+#if true == USE_SHELL
+    #include "shell.h"
+#endif
 #if true == USE_ELOG
+    #include "elog.h"
     #define printLog(format, ...)  log_a(format, ##__VA_ARGS__)
     #define printDbg(format, ...)  log_d(format, ##__VA_ARGS__)
     #define printErr(format, ...)  log_e(format, ##__VA_ARGS__)
     #define printInfo(format, ...) log_i(format, ##__VA_ARGS__)
 #endif
 // 计算和其他
-#include "stdio.h"
+#include <string.h>
+#include <stdlib.h>
+#include <stdarg.h>
+#include <stdio.h>
+
 #include "sort.h"
 #include "fun.h"
 
@@ -127,7 +136,6 @@ extern volatile uint32_t gTime1;
 extern void nvicIRQConf(uint8_t NVIC_IRQCh, uint8_t NVIC_Rob_Rriority, uint8_t NVIC_Son_Priority);
 extern void sysDelayUS(uint32_t us);
 extern void sysDelayMS(uint32_t ms);
-extern uint8_t passwordOK;
 
 
 #endif /* __STM32F4xx_CONF_H */

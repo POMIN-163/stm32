@@ -61,7 +61,14 @@
             "app.h": "c",
             "command.h": "c",
             "cm_backtrace.h": "c",
-            "main.h": "c"
+            "main.h": "c",
+            "rtc.h": "c",
+            "alarm.h": "c",
+            "rtcclock.h": "c",
+            "rng.h": "c",
+            "crtdefs.h": "c",
+            "_mingw.h": "c",
+            "_cygwin.h": "c"
         }
     }
 }

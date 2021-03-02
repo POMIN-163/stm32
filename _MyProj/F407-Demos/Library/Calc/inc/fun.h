@@ -3,6 +3,7 @@
 #include "stm32f4xx.h"
 
 int32_t funAbs(int32_t value);
+int32_t funLimit(int32_t value, int32_t min, int32_t max);
 
 #endif
 

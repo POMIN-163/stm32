@@ -87,8 +87,8 @@ void keyInit(void) {
 #if 1 == KEY_UP_MODE
     gpioConf(KEY_UP, GPIO_High_Speed, GPIO_Mode_IN, GPIO_OType_OD,
              GPIO_PuPd_DOWN);
-    extiConf(EXTI_PortSourceGPIOA, EXTI_PinSource0, EXTI_Line0,
-             EXTI_Mode_Interrupt, EXTI_Trigger_Rising);
+    extiGpioConf(KEY_UP, EXTI_Line0,
+                 EXTI_Mode_Interrupt, EXTI_Trigger_Rising);
     nvicIRQConf(EXTI0_IRQn, 0x01, 0x02);
 #else
     gpioAFConf(KEY_UP, GPIO_High_Speed, GPIO_OType_PP, GPIO_PuPd_DOWN,

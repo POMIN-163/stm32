@@ -8,14 +8,16 @@
 #include "nvic.h"
 #include "exti.h"
 #include "usart.h"
+#include "rtc.h"
+#include "rng.h"
 // 一些开源库
 #if 1 == USE_SHELL
     #include "shell.h"
     extern Shell shell;
-    extern int8_t  _int8;
-    extern int16_t _int16;
-    extern int32_t _int32;
-    extern int32_t *_point;
+    extern int8_t  _int8_;
+    extern int16_t _int16_;
+    extern int32_t _int32_;
+    extern int32_t *_point_;
 #endif
 #if 1 == USE_ELOG
     #include "elog.h"

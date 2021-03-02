@@ -85,21 +85,21 @@ void USART1_IRQHandler(void) {
         #endif
     }
 }
-
+#if 1
 /**
  * @brief print 变参函数, 功能有限, 不支持float
  *
  * @param fmt 字符串
  * @param ... 可变参数
 **/
-typedef char *va_list;
+typedef char *va_list_;
 
 #define _INTSIZEOF(n) ((sizeof(n) + sizeof(int*) - 1) & ~(sizeof(int*) - 1))
-#define va_start_(ap, v) (ap = (va_list)&v + _INTSIZEOF(v))
+#define va_start_(ap, v) (ap = (va_list_)&v + _INTSIZEOF(v))
 #define va_arg_(ap, t) (*(t *)((ap += _INTSIZEOF(t)) - _INTSIZEOF(t)))
-#define va_end_(ap) (ap = (va_list)0)
+#define va_end_(ap) (ap = (va_list_)0)
 
-void putch(int8_t ch) {
+void putch(const char ch) {
     PRINT_USART->DR = ch;
     while((PRINT_USART->SR & 0X40) == 0);
 }
@@ -128,7 +128,7 @@ void putnum(int32_t num, uint8_t carry) {
     }
 }
 void print(const char *fmt, ...) {
-    va_list ap;
+    va_list_ ap;
     va_start_(ap, fmt);
     while((PRINT_USART -> SR & 0X40) == 0);
 
@@ -162,3 +162,4 @@ void print(const char *fmt, ...) {
     va_end_(ap);
 }
 
+#endif

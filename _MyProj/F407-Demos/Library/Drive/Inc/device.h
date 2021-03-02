@@ -10,5 +10,6 @@
 #include "debuguart.h"   // µ÷ÊÔ´®¿Ú
 #include "lcd.h"         // LCD ÆÁÄ»
 #include "user_handler.h"// ÖĞ¶Ï
+#include "rtcClock.h"    // RTC ÄÖÖÓ, »½ĞÑ
 
 #endif

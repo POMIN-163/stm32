@@ -1,0 +1,2 @@
+Load "F:\\_My_Main\\Stm32\\_MyProj\\F103-Demos\\Keil\\Obj\\Proj.axf" 
+Erase Done.Programming Done.Verify OK.Flash Load finished at 14:19:56

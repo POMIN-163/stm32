@@ -16,7 +16,7 @@
         <TargetCommonOption>
           <Device>STM32F407ZG</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F4xx_DFP.2.14.0</PackID>
+          <PackID>Keil.STM32F4xx_DFP.2.15.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x20000) IRAM2(0x10000000,0x10000) IROM(0x08000000,0x100000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -478,6 +478,16 @@
               <FileType>1</FileType>
               <FilePath>..\Library\Peripheral\src\stm32f4xx_wwdg.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f4xx_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Library\Peripheral\src\stm32f4xx_pwr.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_rng.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Library\Peripheral\src\stm32f4xx_rng.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -523,6 +533,16 @@
               <FileType>1</FileType>
               <FilePath>..\Library\System\Src\system.c</FilePath>
             </File>
+            <File>
+              <FileName>rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Library\System\Src\rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>rng.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Library\System\Src\rng.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -567,6 +587,11 @@
               <FileName>debuguart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Library\Drive\Src\debuguart.c</FilePath>
+            </File>
+            <File>
+              <FileName>rtcClock.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Library\Drive\Src\rtcClock.c</FilePath>
             </File>
           </Files>
         </Group>
