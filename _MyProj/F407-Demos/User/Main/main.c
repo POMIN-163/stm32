@@ -31,6 +31,7 @@ taskTypeDef task2MS;
 void TASK_CYCLE_2MS(void) {
     keyScan();
     touchScan();
+    printInfo("Length: %d, 0", hcsr04GetLength());
 }
 taskTypeDef task10MS;
 void TASK_CYCLE_10MS(void) {
@@ -72,7 +73,7 @@ uint8_t Init(void) {
     systemCallFun();      // 响应函数
     breathLedInit();      // 呼吸灯
     //------------------ 模块初始化 -------------------//
-    // hcsr04Init();      // 超声波传感器
+    hcsr04Init();      // 超声波传感器
     //------------------ 应用初始化 -------------------//
     schedulerLoad(&task2MS, 2, 1, TASK_CYCLE_2MS);
     schedulerLoad(&task10MS,10, 1, TASK_CYCLE_10MS);

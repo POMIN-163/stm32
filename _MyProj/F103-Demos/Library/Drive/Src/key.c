@@ -34,6 +34,7 @@ void keyCall(void *button) {
 void keyInit(void) {
     uint8_t i;
     gpioConf(GPIOB, GPIO_Pin_5 | GPIO_Pin_4, GPIO_Speed_10MHz, GPIO_Mode_IPU);
+    GPIO_ResetBits(GPIOB, GPIO_Pin_5 | GPIO_Pin_4);
     button_init(&keyObj[0], keyScan_0, 1);    // 初始化 button 对象
     button_init(&keyObj[1], keyScan_1, 1);
     for(i = allNum; i > 0; i--) {

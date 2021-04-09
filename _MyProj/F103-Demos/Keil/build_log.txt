@@ -1,13 +1,95 @@
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Maker\keil5\ARM\ARMCC\Bin'
 Build target 'Proj'
-compiling multi_button.c...
-compiling scheduler.c...
-compiling command.c...
-compiling key.c...
-compiling main.c...
-linking...
-Program Size: Code=46752 RO-data=10684 RW-data=5460 ZI-data=5164  
-FromELF: creating hex file...
-After Build - User command #1: .\Script\copyOUT.exe
+After Build - User command #1: .\Script\AfterBuild.bat
+
+F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil>fromelf --text -c -o "$L@L.asm" "#L" 
+'fromelf' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil>fromelf --bin -o "$L@L.bin" "#L" 
+'fromelf' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil>set a=F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil\Script\ 
+
+F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil>cd F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil\Script\\..\Obj 
+
+F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil\Obj>If exist ..\..\User\Build copy *.hex ..\..\User\Build\*.hex 
+Proj.hex
+已复制         1 个文件。
+
+F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil\Obj>If exist ..\..\User\Build copy *.bin ..\..\User\Build\*.bin 
+Proj.bin
+已复制         1 个文件。
+
+F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil\Obj>If exist ..\..\User\Build copy *.axf ..\..\User\Build\*.axf 
+Proj.axf
+已复制         1 个文件。
+
+F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil\Obj>If exist ..\..\User\Build copy *.asm ..\..\User\Build\Asm\*.asm 
+Proj.asm
+已复制         1 个文件。
+
+F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil\Obj>cd F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil\Script\\..\List 
+
+F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil\List>If exist ..\..\User\Build copy *.map ..\..\User\Build\*.map 
+Proj.map
+已复制         1 个文件。
+
+F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil\List>If exist ..\..\User\Build copy *.txt ..\..\User\Build\Asm\*.asm 
+breath.txt
+cm_backtrace.txt
+command.txt
+core_cm3.txt
+debuguart.txt
+ec11.txt
+elog.txt
+elog_port.txt
+elog_utils.txt
+fun.txt
+gpio.txt
+key.txt
+led.txt
+main.txt
+misc.txt
+multi_button.txt
+nvic.txt
+oled.txt
+scheduler.txt
+servo.txt
+shell.txt
+shell_ext.txt
+sort.txt
+stm32f10x_adc.txt
+stm32f10x_can.txt
+stm32f10x_dac.txt
+stm32f10x_dbgmcu.txt
+stm32f10x_dma.txt
+stm32f10x_exti.txt
+stm32f10x_flash.txt
+stm32f10x_fsmc.txt
+stm32f10x_gpio.txt
+stm32f10x_i2c.txt
+stm32f10x_iwdg.txt
+stm32f10x_pwr.txt
+stm32f10x_rcc.txt
+stm32f10x_rtc.txt
+stm32f10x_sdio.txt
+stm32f10x_spi.txt
+stm32f10x_tim.txt
+stm32f10x_usart.txt
+stm32f10x_wwdg.txt
+system.txt
+system_stm32f10x.txt
+systick.txt
+tim.txt
+usart.txt
+user_conf.txt
+ws2812b.txt
+已复制        49 个文件。
+
+F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil\List>cd F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil\Script\ 
+
+F:\_My_Main\Stm32\_MyProj\F103-Demos\Keil\Script>exit
 ".\Obj\Proj.axf" - 0 Error(s), 0 Warning(s).
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:01

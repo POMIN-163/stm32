@@ -69,7 +69,10 @@
             "crtdefs.h": "c",
             "_mingw.h": "c",
             "_cygwin.h": "c",
-            "oled.h": "c"
+            "oled.h": "c",
+            "servo.h": "c",
+            "ec11.h": "c",
+            "ws2812b.h": "c"
         }
     }
 }

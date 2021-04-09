@@ -19,9 +19,10 @@ SHELL_EXPORT_VAR(SHELL_CMD_PERMISSION(0) |
 
 void reportInit(void) {
     printInfo("C8T6: %d", 666);     // 打印 LCD ID
+    getRstStatus();                 // 打印复位原因
 }
 void reportTime(void) {
-    printInfo("Tim10: %d", gTime0);
+    printInfo("Time: %d", gTime0);
 }
 void conver(char cmd, int32_t value) {
     switch(cmd) {

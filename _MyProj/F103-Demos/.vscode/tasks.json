@@ -6,7 +6,7 @@
         {
             "type": "shell",
             "label": "UV4 build",//任务的名字，就是刚才在命令面板中选择的时候所看到的，可以自己设置
-            "command": ".\\Script\\build.bat",
+            "command": ".\\build.bat",
             "args": [//编译时候的参数
                 "D:\\Maker\\keil5\\UV4\\UV4.exe",//添加gdb调试选项
                 "Proj.uvprojx"

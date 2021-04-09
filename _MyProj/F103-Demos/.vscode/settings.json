@@ -6,7 +6,6 @@
         "**/List": true,
         "**/OBJ": true,
         "**/Build": true,
-        "**/Keil": true,
         "**/*.code-workspace": true
     },
     "files.encoding": "gb2312",

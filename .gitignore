@@ -27,6 +27,7 @@ _Download/
 *.__i
 *.crf
 *.o
+*.i
 *.d
 *.tra
 *.dep

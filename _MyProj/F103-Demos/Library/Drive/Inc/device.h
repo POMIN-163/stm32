@@ -6,6 +6,9 @@
 #include "breath.h"      // 呼吸灯 (指示初始化基本无误)
 #include "debuguart.h"   // 调试串口
 #include "oled.h"        // OLED 屏幕
+#include "servo.h"       // 舵机
+#include "ec11.h"        // ec11
+#include "WS2812B.h"     // RGB 灯
 //#include "rtcClock.h"    // RTC 闹钟, 唤醒
 
 #endif

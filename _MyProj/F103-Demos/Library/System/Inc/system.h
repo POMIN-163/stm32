@@ -21,6 +21,8 @@
 #if 1 == USE_ELOG
     #include "elog.h"
 #endif
+// 一些获取单片机状态的函数
+void getRstStatus(void);
 
 // 位带操作
 // 公式：最终地址 ＝ 0x42000000 + ((A ‐ 0x40000000)*8 + n)*4 = 0x42000000 + (A ‐ 0x40000000)*32 + n*4
